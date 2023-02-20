@@ -21,10 +21,10 @@ function weatherData(){
       .then(response => response.json())
       .then(data => {
         city.innerHTML = data.name;
-        temp.innerHTML = data.main.temp
+        temp.innerHTML = data.main.temp + " &deg;"
         description.innerHTML = data.weather[0].description;
-        high.innerHTML = "High " +  data.main.temp_max;
-        low.innerHTML = "Low " + data.main.temp_min;
+        high.innerHTML = "High " +  data.main.temp_max + " &deg;";
+        low.innerHTML = "Low " + data.main.temp_min + " &deg;";
         let icon = data.weather[0].icon;
         const imgUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
         let img = document.createElement("img");
