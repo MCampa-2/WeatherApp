@@ -6,10 +6,10 @@
 
 
 :root{
-    --h1: 9vw;
-    --h3: 7vw;
-    --p: 5vw;
-    --label: 5vw;
+    --h1: 7vw;
+    --h3: 6vw;
+    --p: 4vw;
+    --label: 4vw;
     --input-font-size: 2vw;
     --input-height: 6vh;
     --input-border-radius: 20px;
@@ -79,9 +79,11 @@ input[type="text"] {
   }
 
   @media(max-width: 600px){
-input[type="text"]{
-    height: 3vw;
-}
+    input[type="text"]{
+     height: 3vh;
+     font-size: 3.5vw;
+     width: auto;
+    }
   }
 
 
